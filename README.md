@@ -9,12 +9,12 @@ The high computational demand of 3D CNNs limits their deployment on low-resource
 
 This project compares filter and weight pruning to evaluate their effect on the the computational demand (GPU utilization) and performance (accuracy) of 3D CNNs for 3D object classification tasks.
 
-The entire data pre-processing and experiment was done using **Python** in **Google Colab** with the **Nvidia T4 GPU**.
+The entire data preprocessing and experiment was done using **Python** in **Google Colab** with the **Nvidia T4 GPU**.
 ## Dataset Used
 [ModelNet10](https://www.kaggle.com/datasets/balraj98/modelnet10-princeton-3d-object-dataset) is a public dataset by Princeton university, which contains 4,889 labeled CAD models of 3D grayscale objects from 10 different categories, separated into 3,991 (80%) for training and 908 (20%) for testing. 
 
 ![image](https://github.com/user-attachments/assets/97b2954e-109f-4598-b716-bb110e8f69dd)
-## Data Pre-Processing
+## Data Preprocessing
 Converting the 3D-CAD models to tensor dataloaders: (Related: [Voxelization](https://github.com/katifrahim/Voxelization))
 - **Open3D library:** 3D-CAD models -> 3D mesh objects -> Voxel grids  ![plane](https://github.com/user-attachments/assets/6cad2ccf-02b2-461e-ba08-d77087308448)
 - **NumPy library:** Voxel grids -> Arrays containing coordinates of the occupied voxels -> 3D arrays containing binary values representing voxels
